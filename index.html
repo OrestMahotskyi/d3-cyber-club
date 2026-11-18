@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Комп'ютерний клуб D3 Cyber Club</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <input class="menu-toggle" type="checkbox" id="menu-toggle" aria-label="Відкрити меню">
+
+  <header class="header">
+    <div class="container header__inner">
+      <a class="header__logo" href="#top">
+        <img src="img/logo.png" alt="D3 Cyber Club" width="144" height="113">
+      </a>
+
+      <nav class="nav" aria-label="Головне меню">
+        <ul class="nav__list">
+          <li class="nav__item nav__item--drop">
+            <a class="nav__link" href="#zones">Залізо</a>
+            <ul class="submenu">
+              <li><a class="submenu__link" href="#zone-base">База</a></li>
+              <li><a class="submenu__link" href="#zone-pro">ПРО</a></li>
+              <li><a class="submenu__link" href="#zone-boutique">Бутик</a></li>
+              <li><a class="submenu__link" href="#zone-racing">Гонки</a></li>
+              <li><a class="submenu__link" href="#zone-vr">VR</a></li>
+              <li><a class="submenu__link" href="#zone-ps5">ПС-5</a></li>
+            </ul>
+          </li>
+          <li class="nav__item"><a class="nav__link" href="#prices">Ціни</a></li>
+          <li class="nav__item nav__item--drop">
+            <a class="nav__link" href="#news">Турніри</a>
+            <ul class="submenu">
+              <li><a class="submenu__link" href="#news-qualification">Кваліфікація, 10 грудня</a></li>
+              <li><a class="submenu__link" href="#news-final">Гранфінал, 20 грудня</a></li>
+            </ul>
+          </li>
+          <li class="nav__item"><a class="nav__link" href="#tariffs">Акції</a></li>
+          <li class="nav__item"><a class="nav__link" href="#footer">Контакти</a></li>
+        </ul>
+      </nav>
+
+      <div class="header__right">
+        <div class="social">
+          <a class="social__link" href="https://www.instagram.com/" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" width="28" height="28" aria-hidden="true">
+          <rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2.2"/>
+          <circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="2.2"/>
+          <circle cx="17.2" cy="6.8" r="1.3" fill="currentColor"/>
+        </svg>
+          </a>
+          <a class="social__link" href="https://www.tiktok.com/" aria-label="TikTok">
+            <svg viewBox="0 0 24 24" width="28" height="28" aria-hidden="true">
+          <path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"
+                d="M14 3v11.2a3.7 3.7 0 1 1-3.7-3.7M14 3c.3 2.4 1.9 4.2 4.5 4.5"/>
+        </svg>
+          </a>
+        </div>
+
+        <label class="burger" for="menu-toggle" aria-label="Меню">
+          <span class="burger__line"></span>
+          <span class="burger__line"></span>
+          <span class="burger__line"></span>
+        </label>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <section class="hero">
+      <div class="container">
+      <div class="hero__text">
+        <h1 class="hero__title">Комп'ютерний клуб “D3”</h1>
+        <p class="hero__subtitle">Вривайся в гру на максималках!</p>
+        <a class="btn" href="#booking">Забронювати</a>
+      </div>
+      <div class="hero__media">
+        <img class="hero__img" src="img/hero.jpg" alt="Інтер'єр клубу D3">
+      </div>
+      </div>
+    </section>
+
+    <section class="zones" id="zones">
+      <div class="container">
+      <h2 class="section-title">Обери зону</h2>
+
+      <ul class="zones__list">
+        <li class="zone" id="zone-base">
+          <div class="zone__photo">
+            <img class="zone__img" src="img/zone-base.jpg" alt="Зона База">
+            <h3 class="zone__name">База</h3>
+            <p class="zone__price">50 ₴ / годину</p>
+          </div>
+          <p class="zone__specs">Intel Core i5-13400F<br>RTX 4060<br>16GB RAM<br>Монітор 144Hz</p>
+        </li>
+
+        <li class="zone" id="zone-pro">
+          <div class="zone__photo">
+            <img class="zone__img" src="img/zone-pro.jpg" alt="Зона ПРО">
+            <h3 class="zone__name">ПРО</h3>
+            <p class="zone__price">90 ₴ / годину</p>
+          </div>
+          <p class="zone__specs">Intel Core i7-14700KF RTX 4070 Ti 32GB RAM Монітор Zowie 240Hz Шумоізоляція</p>
+        </li>
+
+        <li class="zone" id="zone-boutique">
+          <div class="zone__photo">
+            <img class="zone__img" src="img/zone-boutique.jpg" alt="Зона Бутик">
+            <h3 class="zone__name">Бутик</h3>
+            <p class="zone__price">400 ₴ / годину</p>
+          </div>
+          <p class="zone__specs">5 топових ПК (RTX 4080) Монітори 360Hz Тактична дошка Окрема кімната</p>
+        </li>
+
+        <li class="zone" id="zone-racing">
+          <div class="zone__photo">
+            <img class="zone__img" src="img/zone-racing.jpg" alt="Зона Гонки">
+            <h3 class="zone__name">Гонки</h3>
+            <p class="zone__price">120 ₴ / годину</p>
+          </div>
+          <p class="zone__specs">Кермо Moza R9 (Direct Drive) Педалі Load Cell | Крісло-ківш Вигнутий монітор 49"</p>
+        </li>
+
+        <li class="zone" id="zone-vr">
+          <div class="zone__photo">
+            <img class="zone__img" src="img/zone-vr.jpg" alt="Зона VR">
+            <h3 class="zone__name">VR</h3>
+            <p class="zone__price">200 ₴ / годину</p>
+          </div>
+          <p class="zone__specs">Шоломи Oculus Quest 3<br>М'яка зона<br>Трансляція на екран</p>
+        </li>
+
+        <li class="zone" id="zone-ps5">
+          <div class="zone__photo">
+            <img class="zone__img" src="img/zone-ps5.jpg" alt="Зона ПС-5">
+            <h3 class="zone__name">ПС-5</h3>
+            <p class="zone__price">150 ₴ / годину</p>
+          </div>
+          <p class="zone__specs">PlayStation 5<br>4K TV 65 дюймів<br>4 геймпади<br>DualSense М'які дивани</p>
+        </li>
+      </ul>
+      </div>
+    </section>
+
+    <section class="prices" id="prices" aria-labelledby="prices-title">
+      <div class="container">
+        <h2 class="section-title" id="prices-title">Зони та ціни</h2>
+
+        <div class="table-wrap">
+          <table class="table">
+            <caption class="table__caption">Конфігурація та вартість однієї години в кожній зоні D3</caption>
+            <thead>
+              <tr>
+                <th scope="col">Зона</th>
+                <th scope="col">Конфігурація</th>
+                <th scope="col">Особливості</th>
+                <th scope="col">Ціна за годину</th>
+              </tr>
+            </thead>
+            <tbody>
+          <tr>
+            <th scope="row" data-label="Зона">База</th>
+            <td data-label="Конфігурація">Core i5-13400F, RTX 4060, 16 GB RAM</td>
+            <td data-label="Особливості">Монітор 144Hz</td>
+            <td data-label="Ціна за годину">50 ₴</td>
+          </tr>
+          <tr>
+            <th scope="row" data-label="Зона">ПРО</th>
+            <td data-label="Конфігурація">Core i7-14700KF, RTX 4070 Ti, 32 GB RAM</td>
+            <td data-label="Особливості">Монітор Zowie 240Hz, шумоізоляція</td>
+            <td data-label="Ціна за годину">90 ₴</td>
+          </tr>
+          <tr>
+            <th scope="row" data-label="Зона">Бутик</th>
+            <td data-label="Конфігурація">5 ПК на RTX 4080</td>
+            <td data-label="Особливості">Монітори 360Hz, тактична дошка, окрема кімната</td>
+            <td data-label="Ціна за годину">400 ₴</td>
+          </tr>
+          <tr>
+            <th scope="row" data-label="Зона">Гонки</th>
+            <td data-label="Конфігурація">Кермо Moza R9 (Direct Drive), педалі Load Cell</td>
+            <td data-label="Особливості">Крісло-ківш, вигнутий монітор 49&quot;</td>
+            <td data-label="Ціна за годину">120 ₴</td>
+          </tr>
+          <tr>
+            <th scope="row" data-label="Зона">VR</th>
+            <td data-label="Конфігурація">Шоломи Oculus Quest 3</td>
+            <td data-label="Особливості">М'яка зона, трансляція на екран</td>
+            <td data-label="Ціна за годину">200 ₴</td>
+          </tr>
+          <tr>
+            <th scope="row" data-label="Зона">ПС-5</th>
+            <td data-label="Конфігурація">PlayStation 5, 4 геймпади DualSense</td>
+            <td data-label="Особливості">4K TV 65 дюймів, м'які дивани</td>
+            <td data-label="Ціна за годину">150 ₴</td>
+          </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section class="tariffs" id="tariffs" aria-labelledby="tariffs-title">
+      <div class="container">
+        <h2 class="section-title" id="tariffs-title">Пакети годин</h2>
+        <p class="tariffs__lead">Беручи пакет, платиш на 10% менше, ніж за окремі години.</p>
+
+        <ul class="tariffs__list">
+        <li class="card tariff">
+          <h3 class="tariff__name">Старт</h3>
+          <p class="tariff__price">
+            <span class="tariff__sum">135 ₴</span>
+            <span class="tariff__per">за 3 години</span>
+            <del class="tariff__old">150 ₴</del>
+          </p>
+          <ul class="tariff__features">
+            <li>3 години в зоні «База»</li>
+            <li>Core i5-13400F, RTX 4060</li>
+            <li>Монітор 144Hz</li>
+            <li>Економія 15 ₴</li>
+          </ul>
+          <a class="btn btn--card" href="#contact">Обрати пакет</a>
+        </li>
+        <li class="card tariff tariff--featured">
+          <p class="tariff__badge">Для кваліфікації</p>
+          <h3 class="tariff__name">Турнірний</h3>
+          <p class="tariff__price">
+            <span class="tariff__sum">225 ₴</span>
+            <span class="tariff__per">за 5 годин</span>
+            <del class="tariff__old">250 ₴</del>
+          </p>
+          <ul class="tariff__features">
+            <li>5 годин в зоні «База»</li>
+            <li>Дає право брати участь у кваліфікації 10 грудня</li>
+            <li>Монітор 144Hz</li>
+            <li>Економія 25 ₴</li>
+          </ul>
+          <a class="btn btn--card" href="#contact">Обрати пакет</a>
+        </li>
+        <li class="card tariff">
+          <h3 class="tariff__name">Команда</h3>
+          <p class="tariff__price">
+            <span class="tariff__sum">1800 ₴</span>
+            <span class="tariff__per">за 5 годин</span>
+            <del class="tariff__old">2000 ₴</del>
+          </p>
+          <ul class="tariff__features">
+            <li>5 годин в зоні «Бутик»</li>
+            <li>5 ПК на RTX 4080, монітори 360Hz</li>
+            <li>Тактична дошка та окрема кімната</li>
+            <li>Економія 200 ₴</li>
+          </ul>
+          <a class="btn btn--card" href="#contact">Обрати пакет</a>
+        </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="why">
+      <div class="container">
+      <h2 class="section-title">Чому D3 cyber club?</h2>
+
+      <div class="why__list">
+        <article class="why__item">
+          <svg class="badge" viewBox="0 0 260 310" role="img" aria-label="Логотип D3 у щиті">
+            <path d="M130 8 L238 42 V150 C238 205 190 245 130 272 C70 245 22 205 22 150 V42 Z"
+                  fill="none" stroke="#00FFA3" stroke-width="2.5"/>
+            <path d="M130 30 L216 56 V148 C216 192 178 224 130 246 C82 224 44 192 44 148 V56 Z"
+                  fill="none" stroke="#00FFA3" stroke-opacity=".35" stroke-width="1.5"/>
+            <text x="130" y="152" text-anchor="middle" font-family="Inter, Arial, sans-serif"
+                  font-weight="700" font-size="60" fill="#2EE66B">D3</text>
+            <line x1="2" y1="284" x2="258" y2="284" stroke="#00FFA3" stroke-opacity=".6" stroke-width="1.5"/>
+            <text x="130" y="305" text-anchor="middle" font-family="Inter, Arial, sans-serif"
+                  font-size="16" letter-spacing="1" fill="#8CFFA7">CYBER CLUB</text>
+          </svg>
+          <p class="why__text">Безпека акаунтів<br>Після reboot ПК дані стираються<br>акаунти в безпеці,<br>без вірусів і сторонніх програм.</p>
+        </article>
+
+        <article class="why__item">
+          <svg class="badge" viewBox="0 0 280 330" role="img" aria-label="Логотип D3 у шестикутнику">
+            <polygon points="140,8 262,76 262,214 140,282 18,214 18,76"
+                     fill="none" stroke="#00FFA3" stroke-width="2.5"/>
+            <polygon points="140,40 232,92 232,198 140,250 48,198 48,92"
+                     fill="none" stroke="#00FFA3" stroke-opacity=".35" stroke-width="1.5"/>
+            <text x="140" y="164" text-anchor="middle" font-family="Inter, Arial, sans-serif"
+                  font-weight="700" font-size="60" fill="#2EE66B">D3</text>
+            <line x1="2" y1="298" x2="278" y2="298" stroke="#00FFA3" stroke-opacity=".6" stroke-width="1.5"/>
+            <text x="140" y="320" text-anchor="middle" font-family="Inter, Arial, sans-serif"
+                  font-size="16" letter-spacing="1" fill="#8CFFA7">CYBER CLUB</text>
+          </svg>
+          <p class="why__text">Справжнє гоночне крісло-ківш та величезний вигнутий ультраширокий монітор (49") створюють повний ефект присутності в кокпіті боліда. Жодних відволікань — тільки ти і трек.</p>
+        </article>
+      </div>
+      </div>
+    </section>
+
+    <section class="banner" aria-labelledby="banner-title">
+      <div class="container banner__inner">
+        <h2 class="banner__title" id="banner-title">Збери команду в зоні «Бутик»</h2>
+        <p class="banner__text">5 топових ПК на RTX 4080, монітори 360Hz, тактична дошка та окрема кімната — все для тренувань і турнірів.</p>
+        <a class="btn btn--outline" href="#zone-boutique">Дивитись зону</a>
+      </div>
+    </section>
+    <section class="news" id="news">
+      <div class="container">
+      <h2 class="section-title section-title--big">Останні Новини</h2>
+
+      <article class="news__item" id="news-qualification">
+        <div class="news__body">
+          <p class="news__text">Кваліфікація на гранфінал умова для того щоб брати участь: взяти пакет на 5 годин</p>
+          <p class="news__date">10 грудня</p>
+        </div>
+        <img class="news__img" src="img/news-1.jpg" alt="CS2 Tournament">
+      </article>
+
+      <article class="news__item news__item--reverse" id="news-final">
+        <img class="news__img" src="img/news-2.jpg" alt="Grand Final $1000">
+        <div class="news__body">
+          <p class="news__date">20 грудня</p>
+          <p class="news__text">два переможці з кваліфікацій матимуть шанс поборотися за головний приз в 1000$</p>
+        </div>
+      </article>
+      </div>
+    </section>
+    
+    <section class="contact" id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <h2 class="section-title" id="contact-title">Напиши нам</h2>
+        <p class="contact__lead">Залиш контакти й питання — адміністратор зв'яжеться з тобою та підбере зону й час.</p>
+
+        <form class="form" action="#" method="post">
+          <fieldset class="form__group">
+            <legend class="form__legend">Контактні дані</legend>
+
+            <div class="form__field">
+              <label class="form__label" for="f-name">Ім'я</label>
+              <input class="form__input" id="f-name" name="name" type="text" required minlength="2" maxlength="40" autocomplete="name" placeholder="Як до тебе звертатись">
+            </div>
+
+            <div class="form__field">
+              <label class="form__label" for="f-phone">Телефон</label>
+              <input class="form__input" id="f-phone" name="phone" type="tel" required pattern="\+?[0-9\s\-()]{10,18}" autocomplete="tel" placeholder="+380 67 123 45 67">
+            </div>
+
+            <div class="form__field form__field--wide">
+              <label class="form__label" for="f-email">Email <span class="form__hint">(необов'язково)</span></label>
+              <input class="form__input" id="f-email" name="email" type="email" autocomplete="email" placeholder="name@example.com">
+            </div>
+          </fieldset>
+
+          <fieldset class="form__group">
+            <legend class="form__legend">Твоє повідомлення</legend>
+
+            <div class="form__field">
+              <label class="form__label" for="f-zone">Зона</label>
+              <select class="form__input" id="f-zone" name="zone">
+                <option value="">Ще не вибрав(-ла)</option>
+                <option>База</option>
+                <option>ПРО</option>
+                <option>Бутик</option>
+                <option>Гонки</option>
+                <option>VR</option>
+                <option>ПС-5</option>
+              </select>
+            </div>
+
+            <div class="form__field">
+              <label class="form__label" for="f-date">Бажана дата</label>
+              <input class="form__input" id="f-date" name="date" type="date">
+            </div>
+
+            <div class="form__field form__field--wide">
+              <label class="form__label" for="f-message">Повідомлення</label>
+              <textarea class="form__input form__textarea" id="f-message" name="message" rows="5" maxlength="500" required placeholder="Скільки вас, на скільки годин, чи потрібні нічні години…"></textarea>
+            </div>
+          </fieldset>
+
+          <label class="form__check">
+            <input type="checkbox" name="agree" required>
+            <span>Погоджуюсь на обробку моїх контактних даних для зворотного зв'язку</span>
+          </label>
+
+          <button class="btn form__submit" type="submit">Надіслати</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="booking" id="booking" aria-labelledby="booking-title">
+      <video class="booking__video" autoplay muted loop playsinline preload="metadata"
+             poster="img/video-poster.jpg" aria-hidden="true">
+        <source src="video/club-1280.webm" type="video/webm">
+        <source src="video/club-1280.mp4" type="video/mp4">
+      </video>
+
+      <div class="container booking__inner">
+        <h2 class="booking__title" id="booking-title">Забронюй своє місце в D3</h2>
+        <p class="booking__text">Напиши нам в Instagram — підберемо зону й час, а решту зробимо ми.</p>
+        <a class="btn btn--big" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Забронювати в Instagram</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer" id="footer">
+    <div class="container footer__inner">
+    <a class="footer__logo" href="#top">
+      <img src="img/logo.png" alt="D3 Cyber Club" width="144" height="113">
+    </a>
+
+    <nav class="footer__nav" aria-label="Меню в підвалі">
+      <ul class="footer__row">
+        <li><a class="footer__link" href="#prices">Ціни</a></li>
+        <li><a class="footer__link" href="#tariffs">Акції</a></li>
+      </ul>
+      <ul class="footer__row">
+        <li><a class="footer__link" href="#news">Турніри</a></li>
+        <li><a class="footer__link" href="#zones">Залізо</a></li>
+        <li><a class="footer__link" href="#footer">Контакти</a></li>
+      </ul>
+    </nav>
+
+    <address class="footer__info">
+      <p>Пн–Чт 10:00–22:00 · Пт–Нд 10:00–23:00<br>нічні зміни Пт–Сб та Сб–Нд</p>
+      <p>вул. Стуса, Великий Любінь, Львівська область, 81556</p>
+    </address>
+
+    <div class="social">
+      <a class="social__link" href="https://www.tiktok.com/" aria-label="TikTok">
+        <svg viewBox="0 0 24 24" width="28" height="28" aria-hidden="true">
+          <path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"
+                d="M14 3v11.2a3.7 3.7 0 1 1-3.7-3.7M14 3c.3 2.4 1.9 4.2 4.5 4.5"/>
+        </svg>
+      </a>
+      <a class="social__link" href="https://www.instagram.com/" aria-label="Instagram">
+        <svg viewBox="0 0 24 24" width="28" height="28" aria-hidden="true">
+          <rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2.2"/>
+          <circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="2.2"/>
+          <circle cx="17.2" cy="6.8" r="1.3" fill="currentColor"/>
+        </svg>
+      </a>
+    </div>
+    </div>
+  </footer>
+
+</body>
+</html>
